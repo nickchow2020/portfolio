@@ -1,0 +1,119 @@
+.contact{
+    width: 95%;
+    margin: auto;
+}
+.messageHeader,
+.contactHeader{
+    color: $mainColor;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+}
+// Form Styles
+.form{
+    width: 100%;
+}
+.input{
+    display: inline-block;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding: 0 .5rem;
+    box-shadow: 0 0 5px 0 $colorGray;
+    color: $colorGray;
+    transition: all .3s;
+    &:focus{
+        border-bottom: solid $mainColor 3px;
+    }
+}
+.nameLabel{
+    font-size: 1.5rem;
+    color: $colorGray;
+    padding: 0;
+    margin:.5rem 0;
+}
+
+.formBtn{
+    width: 50%;
+    border: none;
+    display: block;
+    background: $mainColor;
+    color: $colorWhite;
+    padding: .5rem 0;
+    margin: 1rem auto;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    transition: all .4s;
+    &:hover{
+        background: lighten($color: $mainColor, $amount: 20%);
+        color: $colorGray;
+    }
+}
+
+//email and phone style
+.emailWrap,
+.phoneWrap{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.email,
+.phone{
+    width:50px;
+    transition: all .4s;
+    cursor: pointer;
+    &:hover{
+        fill: $mainColor;
+    }
+}
+
+.emailaddress,
+.phoneNumber{
+    font-size: 1.5rem;
+    color: $colorGray;
+}
+
+@media(min-width:768px){
+    .contactWrap{
+        width: 50%;
+        margin: auto;
+    }
+
+    .formBtn{
+        width: 30%;
+    }
+}
+
+@media(min-width: 1024px){
+    .contact{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .form,
+    .contactMe{
+        width: 50%;
+        max-width: 600px;
+    }
+    .contactMe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .formBtn{
+        width: 50%;
+        border-radius: 30px;
+    }
+    .contactWrap{
+        width: 100%;
+        margin: auto;
+    }
+    .emailWrap,
+    .phoneWrap{
+        max-width: 300px;
+    }
+}

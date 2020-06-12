@@ -1,0 +1,92 @@
+.modal-header{
+    background-color: $mainColor;
+    color: white;
+}
+
+.modal-footer{
+    background-color: $mainColor;
+}
+
+.modal{
+    background-color: rgba($color: $mainColor, $alpha: .1);
+}
+
+.modal-body{
+}
+
+.avatar{
+ border-radius: 50%;
+ width: 100px;
+ margin: 1rem 0;
+}
+
+.lead::first-letter{
+    margin-left: 2rem;
+}
+
+.moreme{
+    color: $mainColor;
+}
+
+//Icons-layouts
+.svgicons{
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.githubIcon{
+    width: 70px;
+    fill: $colorGray;
+    cursor: pointer;
+    transition: fill .2s ease-in-out;
+    &:hover{
+        fill: $mainColor;
+    }
+}
+
+.wechatIcon{
+    padding-bottom: .5rem;
+    width: 50px;
+    fill: $colorGray;
+    cursor: pointer;
+    transition: fill .2s ease-in-out;
+    &:hover{
+        fill: $mainColor;
+    }
+}
+
+.treehouseIcon{
+    padding-top: .5rem;
+    width: 45px;
+    fill: $colorGray;
+    cursor: pointer;
+    transition: fill .2s ease-in-out;
+    &:hover{
+        fill: $mainColor;
+    }
+}
+
+.facebookIcon{
+    width: 50px;
+    padding-top: .2rem;
+    fill: $colorGray;
+    cursor: pointer;
+    transition: fill .2s ease-in-out;
+    &:hover{
+        fill: $mainColor;
+    }
+}
+
+// Wechat Style
+.wechatQRdiv{
+    width: 70%;
+    margin: auto;
+    display: none;
+}
+
+.wechatQR{
+    width: 100%;
+}
