@@ -87,7 +87,7 @@ body {
 
 .header_btn {
   width: 30%;
-  height: 6em;
+  height: 4em;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -109,7 +109,8 @@ body {
       border-radius: 20px;
       font-size: 1.8rem;
       width: 15%;
-      height: 10em; } }
+      border-radius: 50%;
+      height: 6em; } }
   .header_btn:hover {
     background: tomato;
     color: #fff; }
