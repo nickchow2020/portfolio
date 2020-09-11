@@ -7,6 +7,10 @@
 }
 }
 
+.projectsDiv{
+    margin: 0 3rem;
+}
+
 .projectdes{
     font-size: 1.2rem;
     text-align: center;
@@ -16,14 +20,61 @@
 }
 
 .projectWrap{
-    width: 95%;
+    width: 100%;
     height: 250px;
+    perspective: 2000px;
+    transform-style: preserve-3d; 
+    transition: .5s;
+    transform-origin: center;
+    &:hover{
+        transform: translate(0%) rotate(-5deg);
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background: tomato;
+    }
+    &:after{
+        content: "";
+        position: absolute;
+        width: 3px;
+        height: 100%;
+        top:0;
+        right:-3px;
+        background: tomato;
+    }
+    @media(max-width: 768px){
+        margin: 4rem 0;
+    }
+}
+
+.projectCover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-origin: top left;
+    transition: 1s;
+}
+
+.projectWrap:hover .projectCover{
+    transform: rotateX(125deg);
+}
+
+
+.details{
+    width: 100%;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1.5rem;
     background: orange;
     position: relative;
     box-shadow: 0 0 5px 0 $colorGray;
+    z-index: -1;
 }
 
 .imageProject{
@@ -105,7 +156,7 @@
     .projectList{
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
-        grid-gap: 2rem 1rem;
+        grid-gap: 3rem 6rem;
     }
     .projectdes{
         margin-bottom: 2rem;
