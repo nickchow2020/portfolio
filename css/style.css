@@ -489,7 +489,7 @@ span.animate {
   right: 0;
   background: rgba(255, 99, 71, 0.5);
   color: white;
-  text-shadow: 1px 1px 1px blue;
+  text-shadow: 1px 1px 1px black;
   padding: 1rem .5rem; }
 
 .coverTitle,
