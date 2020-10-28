@@ -487,8 +487,9 @@ span.animate {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 99, 71, 0.9);
+  background: rgba(255, 99, 71, 0.5);
   color: white;
+  text-shadow: 1px 1px 1px blue;
   padding: 1rem .5rem; }
 
 .coverTitle,
@@ -502,7 +503,7 @@ span.animate {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(255, 99, 71, 0.4);
+  background-color: rgba(255, 99, 71, 0.3);
   opacity: 0;
   transition: all .5s;
   display: flex;
@@ -513,10 +514,10 @@ span.animate {
   cursor: pointer; }
 
 .projectsummery {
-  color: #000;
+  color: white;
   font-size: 1.2rem;
   text-align: center;
-  text-shadow: 0 0 1px white; }
+  text-shadow: 1px 1px 2px black; }
 
 .projectWrap:hover .hoverImage {
   opacity: 1; }
