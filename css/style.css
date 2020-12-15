@@ -270,6 +270,16 @@ span.animate {
   .wechatIcon:hover {
     fill: tomato; }
 
+.resumeIcon {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  width: 50px;
+  fill: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: fill .2s ease-in-out; }
+  .resumeIcon:hover {
+    fill: tomato; }
+
 .treehouseIcon {
   padding-top: .5rem;
   width: 45px;

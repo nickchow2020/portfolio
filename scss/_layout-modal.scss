@@ -58,6 +58,18 @@
     }
 }
 
+.resumeIcon{
+    padding-top:.5rem;
+    padding-bottom:.5rem;
+    width: 50px;
+    fill: $colorGray;
+    cursor: pointer;
+    transition: fill .2s ease-in-out;
+    &:hover{
+        fill: $mainColor;
+    }
+}
+
 .treehouseIcon{
     padding-top: .5rem;
     width: 45px;
