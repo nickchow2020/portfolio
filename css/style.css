@@ -544,9 +544,8 @@ span.animate {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 99, 71, 0.5);
-  color: white;
-  text-shadow: 1px 1px 1px black;
+  background: white;
+  color: tomato;
   padding: 1rem .5rem; }
 
 .coverTitle,
@@ -560,7 +559,7 @@ span.animate {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(255, 99, 71, 0.3);
+  background-color: rgba(255, 99, 71, 0.9);
   opacity: 0;
   transition: all .5s;
   display: flex;
@@ -574,7 +573,6 @@ span.animate {
   color: white;
   font-size: 1.4rem;
   text-align: center;
-  text-shadow: 2px 2px 0 black;
   font-weight: bold; }
 
 .projectWrap:hover .hoverImage {
