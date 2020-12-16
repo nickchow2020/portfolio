@@ -19,6 +19,10 @@ a {
 input {
   border: none; }
 
+.list-group-item.active {
+  background-color: tomato;
+  border-color: tomato; }
+
 body {
   background: linear-gradient(white, #ffe5e0);
   background-repeat: no-repeat;
@@ -313,13 +317,6 @@ span.animate {
     .skillHeader {
       font-size: 4rem; } }
 
-.skilldes {
-  font-size: 1.2rem;
-  text-align: center; }
-  @media (min-width: 1024px) {
-    .skilldes {
-      font-size: 1.4rem; } }
-
 .skillsIcons {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
@@ -347,6 +344,21 @@ span.animate {
 
 .iconWrap:hover .span {
   opacity: 1; }
+
+.frontendTitle,
+.backendTitle,
+.dataendTitle {
+  color: tomato; }
+
+.frontend,
+.backend,
+.dataend {
+  margin: 2rem 0; }
+
+.frontendTitle,
+.backendTitle,
+.dataendTitle {
+  text-align: center; }
 
 @media (min-width: 768px) {
   .skillDiv {
@@ -414,7 +426,42 @@ span.animate {
     from {
       transform: rotateY(0deg); }
     to {
-      transform: rotateY(360deg); } } }
+      transform: rotateY(360deg); } }
+  .frontendTitle,
+  .backendTitle,
+  .dataendTitle {
+    text-align: left;
+    font-weight: bold; }
+
+  .listText {
+    font-size: 1.5rem; } }
+@media (min-width: 1024px) {
+  .frontendWrapper,
+  .backendWrapper,
+  .dataendWrapper {
+    width: 50%; }
+
+  .backend {
+    display: flex;
+    justify-content: center; }
+
+  .dataend {
+    display: flex;
+    justify-content: flex-end; }
+
+  .dataendWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+
+  .dataOrderwitch {
+    display: flex; }
+
+  .listBtn {
+    order: 2; }
+
+  .listDis {
+    order: 1; } }
 .projectHeader {
   color: tomato;
   margin-top: 6rem;

@@ -15,3 +15,8 @@ a{
 input{
     border: none;
 }
+
+.list-group-item.active{
+    background-color: $mainColor;
+    border-color: $mainColor;
+}
