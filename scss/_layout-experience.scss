@@ -1,0 +1,26 @@
+.experienceHeader{
+  color: $mainColor;
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+  @media(min-width:1024px){
+      font-size: 4rem;
+}
+}
+
+
+.exWrapper{
+  margin: 1rem 3rem;
+  box-shadow: 0 0 5px 0 $colorGray;
+  padding: 1rem;
+  cursor: pointer;
+
+  &:hover{
+    box-shadow: 0 0 5px 0 tomato;
+  }
+}
+
+.exList li{
+  line-height: 2;
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}

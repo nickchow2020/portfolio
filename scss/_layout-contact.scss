@@ -2,10 +2,10 @@
     width: 95%;
     margin: auto;
 }
-.messageHeader,
+
 .contactHeader{
     color: $mainColor;
-    margin-top: 6rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
 }
 // Form Styles
@@ -61,7 +61,7 @@
 }
 .email,
 .phone{
-    width:50px;
+    width:40px;
     transition: all .4s;
     cursor: pointer;
     &:hover{
@@ -73,16 +73,14 @@
 .phoneNumber{
     font-size: 1.5rem;
     color: $colorGray;
+    margin: 0 0 0 1rem;
+    padding: 0;
 }
 
 @media(min-width:768px){
     .contactWrap{
-        width: 50%;
+        width: 100%;
         margin: auto;
-    }
-
-    .formBtn{
-        width: 30%;
     }
 }
 
@@ -90,30 +88,25 @@
     .contact{
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
     }
 
-    .form,
     .contactMe{
-        width: 50%;
-        max-width: 600px;
-    }
-    .contactMe{
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .formBtn{
-        width: 50%;
-        border-radius: 30px;
-    }
     .contactWrap{
         width: 100%;
-        margin: auto;
+        display: flex;
     }
     .emailWrap,
     .phoneWrap{
-        max-width: 300px;
+        height: 4rem;
+        width: 50%;
+        display: flex;
+        justify-content: center;
     }
 }

@@ -624,14 +624,34 @@ span.animate {
 
   .imageProject {
     border-radius: 20px; } }
+.experienceHeader {
+  color: tomato;
+  margin-top: 6rem;
+  margin-bottom: 1rem; }
+  @media (min-width: 1024px) {
+    .experienceHeader {
+      font-size: 4rem; } }
+
+.exWrapper {
+  margin: 1rem 3rem;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  cursor: pointer; }
+  .exWrapper:hover {
+    box-shadow: 0 0 5px 0 tomato; }
+
+.exList li {
+  line-height: 2;
+  list-style-type: disc;
+  margin-left: 1.5rem; }
+
 .contact {
   width: 95%;
   margin: auto; }
 
-.messageHeader,
 .contactHeader {
   color: tomato;
-  margin-top: 6rem;
+  margin-top: 2rem;
   margin-bottom: 1rem; }
 
 .form {
@@ -681,7 +701,7 @@ span.animate {
 
 .email,
 .phone {
-  width: 50px;
+  width: 40px;
   transition: all .4s;
   cursor: pointer; }
   .email:hover,
@@ -691,43 +711,37 @@ span.animate {
 .emailaddress,
 .phoneNumber {
   font-size: 1.5rem;
-  color: rgba(0, 0, 0, 0.6); }
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0 0 0 1rem;
+  padding: 0; }
 
 @media (min-width: 768px) {
   .contactWrap {
-    width: 50%;
-    margin: auto; }
-
-  .formBtn {
-    width: 30%; } }
+    width: 100%;
+    margin: auto; } }
 @media (min-width: 1024px) {
   .contact {
     width: 100%;
     display: flex;
-    justify-content: space-around; }
-
-  .form,
-  .contactMe {
-    width: 50%;
-    max-width: 600px; }
+    flex-direction: column; }
 
   .contactMe {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; }
 
-  .formBtn {
-    width: 50%;
-    border-radius: 30px; }
-
   .contactWrap {
     width: 100%;
-    margin: auto; }
+    display: flex; }
 
   .emailWrap,
   .phoneWrap {
-    max-width: 300px; } }
+    height: 4rem;
+    width: 50%;
+    display: flex;
+    justify-content: center; } }
 .main-footer {
   height: 3rem;
   background: tomato;
